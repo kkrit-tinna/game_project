@@ -1,0 +1,37 @@
+Memory Game Design Summary
+
+To begin, locate the Python file memory_game.py and run it. Once launched, you’re ready to enjoy an engaging memory match game!
+
+This program is built using three classes: Game, Board, and Card.
+ 1. Game
+ • Prompts players to enter their names and select the number of cards to play with.
+ • Let players choose between two card decks: a standard poker deck or a set of adorable dog images (read from a configuration file).
+ • Reads images from a configuration file and randomizes them before passing control to the class Board.
+ 2. Board
+ • Manages all board-related activities.
+ • Creates the game layout, places randomized cards on the board, and updates the leaderboard.
+ • Tracks gameplay progress by monitoring guesses and matches in each round.
+ • Handles clicks by introducing actions in class Card until all matches are complete, or the player exiting the game.
+ 3. Card
+ • Manages card-specific actions.
+ • Flips cards, checks if two cards match, and restores unmatched cards to their original states.
+
+Tradeoff: 
+I moved automatic actions (updating status board, displaying leaders, and declaring winning) to class Board, 
+so that I can make a distinction between actions depending on users’ inputs,
+and actions that are independent of users’ inputs and focus only on clicks handling.
+However, this separation of responsibilities introduces some challenges:
+ 1. Unnatural Grouping
+ • The Card class resolves card matches, which seems better suited to the Game class. 
+ This decision was made to resolve matches immediately after two cards are flipped, ensuring they stay matched even if clicked accidentally later. 
+ While functional, this design requires implementing resolve_match as a class method to handle multiple cards simultaneously.
+ 2. Redundant Tracking
+ • The Board class maintains a flipped_cards variable to count guesses, even though resolve_match already handles matches at the card level. 
+ While this redundancy adds inefficiency, it helps clarify the distinction between match resolution (at the card level) and status updates (at the board level).
+Although these trade-offs introduce some inefficiencies, they allow for better modularity and separation of concerns, 
+which in turn guarantees clarity and error handling in game design.
+
+
+
+
+

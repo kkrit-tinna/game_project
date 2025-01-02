@@ -1,0 +1,43 @@
+Project Executive Plan
+
+
+MILESTONES
+1. Spike Time: Turtle Pre-work Exploration
+
+Goal: knowing how to draw shapes, capture mouse clicks, use turtle objects to render .gif images in the proper locations, write code to do the basic drawing and event handling you'll need. 
+
+How: Review the turtle library, turtle lab AND the labs where we had turtle as a "stretch goal".
+
+
+Checkpoint: 11/19/2024
+
+2.  Develop Gameboard: Write the code to create the entire game board: The play area, status area & leader board. Validate the code works with “dummy” data.
+
+Checkpoint: 11/19/2024
+
+3. Card placement & behavior: Write the code to manage proper Card placement for the game for showing and flipping card pictures Check your layout algorithm to make sure it works for placing Cards and for showing/erasing images. Ensure that Cards "flip" properly. Remember: if the user guesses wrong, you need to be able to "flip" the card image from front to back (and vice versa). If the user matches the cards, you need to erase them both from the playing field.
+
+Checkpoint: 11/21/2024
+
+4. Game behavior: Write the code to finish the game rules. Click to flip the cards, but only when clicking ON a card. Update the moves counter when the user finishes trying to match 2 cards. React appropriately Quit button to exit the game. When the user "wins", show the appropriate message
+
+Checkpoint: 11/27/2024
+
+
+
+Overall Requirement: 
+1. The player should be able to input their name to your game through a pop-up window rather than in the terminal.
+
+2. Your program must display a “status” area that presents the player with their current number of guesses and matches – updating those values appropriately. Note: a single mouse-click is not a “guess”. Consider the player entering their guess after they’ve selected a card and then tried to match it with another card selection.
+
+3. Your program should read the names of the image files representing "cards to play with" from a configuration file (similar to what is shown in the video). If you get stuck and cannot do this, you can reference the "basic card deck" directly in your code, but realize that "hardcoding" file names will lead to some deductions. As an added benefit, if you take this approach of configuration files, you'll be half-way there to earning bonus points (see below).
+
+4. Your program must display a “leader board” that keeps track of the (6 to 8) “top player” statistics (number of guesses and name) between executions of your program. The lowest number of guesses indicates the “better” player.
+
+5. Your program must implement a “quit” button (similar to what’s shown in the demo video) in case the player wants to exit the program before finishing the game. Players who quit do NOT have their statistics added to the leader board
+
+6. If the player matches all pairs without quitting, they "win" the game. A message indicating that victory should be shown, and the program should end.
+
+7. OPTIONAL: When the program exits show a Credits screen before the program terminates. You can create your own credits screen if you want to do this
+
+8. OPTIONAL: When the program starts, show a "splash screen" that shows your game's logo. You can create your own splash screen if you want to do this.

@@ -1,0 +1,10 @@
+Player 1 13
+Player 1 14
+Player 1 10
+09 7
+as 8
+q 9
+koi 13
+d 7
+nas 13
+order 9
