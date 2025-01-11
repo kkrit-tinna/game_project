@@ -1,14 +1,12 @@
 
 # Memory Matching Game
-
 Memory Match is a is a game (often using playing cards) that requires players to remember and match similar elements. 
 If using cards, the player turns over two cards at a time and tries to match pairs in as few "moves" as possible.
 This project reimagines the game process and replaces physical cards with its online counterparts.
 
 
 ## Description
-
-* PLayers can input their names through a pop-up window, decide which card deck they can plau with (poker cards is the default), and select the number of cards to play with. 
+* Players can input their names through a pop-up window, decide which card deck they can plau with (poker cards is the default), and select the number of cards to play with. 
   * The allowable options are 8, 10, and 12 cards.
 * The main board displays cards for matching game, Consider the player entering their guess after they’ve selected a card and then tried to match it with another card selection.
   * It also displays a “status” area that presents the player with their current number of guesses and matches.
@@ -66,11 +64,9 @@ from card import Card
 
 
 ## Author
-
 Yifei Shi
 
 
 ## Version History
-
 * 0.1
     * Initial Release
